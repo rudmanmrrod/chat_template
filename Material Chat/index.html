@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="author" content="rudman">
+  <link href="static/materialize/css/materialize.min.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="static/materialize/material_icon/icon.css"/>
+  <link href="static/css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <title id="title-page">Chat</title>
+</head>
+<body>
+  <div class="container">
+    <div class="msg-container">
+
+      <div class="row">
+        <div class="col m12 col s12">
+          <div class="box-blue">
+            <img class="pull-right" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Invite</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m12 col s12">
+          <div class="box-gray">
+            <img class=" pull-left" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Rudman</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m12 col s12">
+          <div class="box-blue">
+            <img class="pull-right" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Invite</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m12 col s12">
+          <div class="box-gray">
+            <img class=" pull-left" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Rudman</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  
+
+    <div class="row">
+      <form style="display:inherit">
+        <div class="col m10 s10" >
+          <input type="text" placeholder="Escribe un mensaje"/>
+        </div>
+        <div class="col m2 s2" >
+          <button type="submit" class="btn chat-submit-button"><i class="material-icons">send</i></button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="static/jquery/jquery-3.1.0.min.js"></script>
+  <script src="static/materialize/js/materialize.min.js"></script>
+</body>
+</html>
