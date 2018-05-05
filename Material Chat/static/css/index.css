@@ -54,5 +54,5 @@
 
 .msg-container{
   max-height:350px;
-  overflow:scroll;
+  overflow-y:scroll;
 }
