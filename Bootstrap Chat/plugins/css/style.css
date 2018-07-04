@@ -3,14 +3,7 @@
     /*color: #FFF;*/
     padding-left: 1%;
 }
-.back-white{
-    background-color: #FFF;
-}
-
-.back-positive{
-    background-color: #387ef5;
-}
-.panel-footer {
+.chat-bottom-bar {
     padding: 10px 15px !important;
     background-color: #387ef5 !important;
 }
@@ -88,15 +81,38 @@
     margin-top: -10px;
 }
 
-.item {
-    text-overflow: initial;
-    white-space: initial;
-}
 .input-50{
     width: 50%
 }
 
 .msg-container{
+  height: 70%;
   max-height:400px;
   overflow-y:scroll;
+  background-color: white;
 }
+
+.msg-container > div{
+    padding-bottom: 2%;
+}
+
+/*
+    File Input
+*/
+.file_input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file_input + span {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
