@@ -96,6 +96,10 @@
     padding-bottom: 2%;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 /*
     File Input
 */

@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .box-blue{
     background-color: #387ef5;
     color: #FFF;
@@ -55,4 +65,35 @@
 .msg-container{
   max-height:350px;
   overflow-y:scroll;
+  background-color: white;
+}
+
+.msg-label{
+    background-color: #387ef5;
+    color: #FFF;
+    z-index: 2;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/*
+    File Input
+*/
+.file_input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file_input + span {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
 }

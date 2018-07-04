@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="author" content="rudman">
+  <link href="static/materialize/css/materialize.min.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="static/materialize/material_icon/icon.css"/>
+  <link href="static/css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <title id="title-page">Chat</title>
+</head>
+<body>
+  <main></main>
+  <div class="page-footer">
+    <div class="row">
+      <div class="col s4 offset-s7 msg-label">
+        <div class="col s11 xs10">
+          <div class="label-username">Name</div>
+        </div>
+        <div class="col s1 xs2">
+          <a class="pointer red-text">
+            <i class="material-icons">clear</i>
+          </a>
+        </div>
+      </div>
+      <div class="msg-container col s4 offset-s7">
+
+        <div class="col m12 col s12">
+          <div class="box-blue">
+            <img class="pull-right" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Invite</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m12 col s12">
+          <div class="box-gray">
+            <img class=" pull-left" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Rudman</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m12 col s12">
+          <div class="box-blue">
+            <img class="pull-right" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Invite</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m12 col s12">
+          <div class="box-gray">
+            <img class=" pull-left" ng-src="{{message.imageUrl}}" />
+            <p>Content</p>
+            <div>
+              <strong>Rudman</strong>&nbsp;
+              <span class="date">Fecha</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
+
+      <div class="col s4 offset-s7" style="padding-top: 1%;">
+        <form>
+          <div class="col m7 s7" >
+            <input type="text" placeholder="Escribe un mensaje"/>
+          </div>
+          <div class="col m3 s3" >
+            <span class="input-group">
+              <label class="btn btn-small">
+                <i class="material-icons">attachment</i>
+                <input type="file" class="file_input"/>
+              </label>        
+            </span>
+          </div>
+          <div class="col m2 s2" >
+            <button type="submit" class="btn btn-small"><i class="material-icons">send</i></button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="static/jquery/jquery-3.1.0.min.js"></script>
+  <script src="static/materialize/js/materialize.min.js"></script>
+</body>
+</html>
